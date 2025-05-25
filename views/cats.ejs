@@ -1,0 +1,30 @@
+<%- include("parts/header") %>
+
+<div class="container my-5">
+  <h1 class="display-4 fw-bold text-center my-4 title-blue">Cats for Adoption</h1>
+
+  <table class="table table-striped align-middle custom-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Breed</th>
+        <th>State</th>
+        <th>Species</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% cats.forEach(function(cat) { %>
+        <tr>
+          <td><%= cat.name %></td>
+          <td><%= cat.age %></td>
+          <td><%= cat.breed %></td>
+          <td><%= cat.state %></td>
+          <td><%= cat.species %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+
+<%- include("parts/footer") %>

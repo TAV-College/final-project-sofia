@@ -1,0 +1,33 @@
+<%-include("parts/header")%>
+
+<h1 class="display-4 fw-bold text-center my-4 title-blue">Adoptions</h1>
+
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-striped align-middle custom-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Breed</th>
+                <th>State</th>
+                <th>Species</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% adoptions.forEach(function(adoption) { %>
+                <tr>
+                    <td><%= adoption.name %></td>
+                    <td><%= adoption.age %></td>
+                    <td><%= adoption.breed %></td>
+                    <td><%= adoption.state %></td>
+                    <td><%= adoption.species %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<%-include("parts/footer")%>
+

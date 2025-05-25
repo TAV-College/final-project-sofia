@@ -1,0 +1,32 @@
+<%- include('parts/header') %>
+
+<div class="container my-5">
+  <h1 class="display-4 fw-bold text-center my-4 title-blue">Adoption Details</h1>
+
+  <table class="table table-striped align-middle custom-table">
+    <tbody>
+      <tr>
+        <th scope="row">Name</th>
+        <td><%= adoption.name %></td>
+      </tr>
+      <tr>
+        <th scope="row">Age</th>
+        <td><%= adoption.age %></td>
+      </tr>
+      <tr>
+        <th scope="row">Breed</th>
+        <td><%= adoption.breed %></td>
+      </tr>
+      <tr>
+        <th scope="row">State</th>
+        <td><%= adoption.state %></td>
+      </tr>
+      <tr>
+        <th scope="row">Species</th>
+        <td><%= adoption.species %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<%- include('parts/footer') %>

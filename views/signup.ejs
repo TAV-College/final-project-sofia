@@ -1,0 +1,35 @@
+<%- include('parts/header')%>
+
+<div class="container mt-5">
+  <h1 class="display-5 fw-bold text-center mb-4 title-blue">Sign Up</h1>
+
+  <% if (typeof errorMsg !== "undefined" && errorMsg !== '') { %>
+    <div class="alert alert-danger text-center" role="alert">
+      <%= errorMsg %>
+    </div>
+  <% } %>
+
+  <form action="/user" method="POST" class="mx-auto" style="max-width: 400px;">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username:</label>
+      <input type="text" name="username" id="username" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="password1" class="form-label">Password:</label>
+      <input type="password" name="password1" id="password1" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="password2" class="form-label">Confirm Password:</label>
+      <input type="password" name="password2" id="password2" class="form-control" required>
+    </div>
+    <div class="d-grid">
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone:</label>
+      <input type="number" name="phone" id="phone" class="form-control" required>
+    </div>
+      <button type="submit" class="btn btn-custom">Sign Up</button>
+    </div>
+  </form>
+</div>
+
+<%- include('parts/footer')%>

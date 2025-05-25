@@ -1,0 +1,31 @@
+{
+  "name": "animals",
+  "version": "1.0.0",
+  "description": "Adoption page",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "dev": "nodemon --env-file=.env index.js",
+    "lint": "npx eslint",
+    "lint:fix": "npx eslint --fix",
+    "pretty": "npx prettier . --check",
+    "pretty:fix": "npx prettier . --write"
+  },
+  "author": "Sofia Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^11.10.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.1.0",
+    "nodemon": "^3.1.10",
+    "prettier": "3.5.3"
+  }
+}

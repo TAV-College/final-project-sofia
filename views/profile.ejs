@@ -1,0 +1,24 @@
+<%- include('parts/header')%>
+
+<div class="container mt-5">
+  <h1 class="display-4 fw-bold text-center my-4 title-blue"><%= title %></h1>
+
+  <p>We will contact you very soon! </p>
+
+  <table class="table table-striped align-middle custom-table">
+    <thead class="table-dark">
+      <tr>
+        <th>Username</th>
+        <th>Token</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= user.username %></td>
+        <td><%= user.token %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<%- include('parts/footer')%>
